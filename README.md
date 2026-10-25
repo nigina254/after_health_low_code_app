@@ -62,19 +62,8 @@ The project also covers functional testing and performance monitoring, including
 
 ## 🚀 How to Run the Application
 
-AfterHealth is a **Microsoft Power Apps application**, not a conventional local web application. It does not run with commands such as `npm start` or `python app.py`. You need access to the relevant Microsoft Power Platform environment and its configured resources.
 
-### Option 1: Open an already-deployed app
-
-1. Obtain access to the project's Power Platform environment from the project owner or administrator.
-2. Sign in to [Microsoft Power Apps](https://make.powerapps.com/) with the authorized account.
-3. Select the correct environment.
-4. Open the deployed AfterHealth app from the available apps list, or use the app's shared launch link provided by the owner.
-5. Sign in using an authorized patient or doctor test account.
-
-The app will only work as expected if its Dataverse data, connection references, permissions, flows, and Copilot configuration are available in that environment.
-
-### Option 2: Import and run the solution
+### Import and run the solution
 
 If the repository contains an exported Power Platform solution package, use the following general workflow:
 
@@ -87,19 +76,6 @@ If the repository contains an exported Power Platform solution package, use the 
 
 The exact menu labels may vary with the Power Platform interface and your permissions. If no solution package is included, the app may need to be opened from its original Power Platform environment or exported by someone with access.
 
-### Option 3: Deploy through the project pipeline
-
-For contributors with access to the configured Power Platform environments:
-
-1. Publish the latest solution changes in **Development**.
-2. Confirm that all required app components, Dataverse tables, flows, connection references, and environment variables are included.
-3. Increment the solution version.
-4. Use the Power Platform pipeline to deploy to **Test**.
-5. Validate data connections, app screens, and Copilot behavior in Test.
-6. After successful validation and any required approval, deploy to **Production**.
-7. Verify the deployed app in the Production environment.
-
-**Important:** Environment access, appropriate permissions, Dataverse configuration, and valid connections are required. The pipeline cannot be reproduced from GitHub alone without the corresponding Power Platform resources.
 
 ## 🧪 Testing and Monitoring
 
@@ -114,13 +90,7 @@ The project report describes functional testing and monitoring of application be
 
 Testing should be repeated in the target environment after changes are deployed.
 
-## 🔒 Data and Privacy
 
-The application handles healthcare-related information. Use only authorized test data in development and testing environments, follow the environment's access controls, and do not commit credentials, tokens, or real patient data to GitHub. Patient access should be restricted to the records they are authorized to view.
-
-## 🔭 Potential Future Improvements
-
-The project report identifies possible future work such as enhanced personalized AI support, telehealth integration, multilingual support, wearable-device integration, and more comprehensive analytics for healthcare providers.
 
 ## 👩‍💻 My Contributions
 
