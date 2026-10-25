@@ -48,9 +48,4 @@ This project was completed as part of **DevOps and Low-Code Development**. It pr
 
 Supporting project documentation is available in the [`report/`](./report/) directory.
 
-## 👤 Author
-
-**Nigina Abdukhalimova**
-
-- GitHub: [@nigina254](https://github.com/nigina254)
 - Repository: [after_health_low_code_app](https://github.com/nigina254/after_health_low_code_app)
